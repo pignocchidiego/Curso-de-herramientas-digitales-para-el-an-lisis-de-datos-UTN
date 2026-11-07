@@ -4,58 +4,74 @@
 
 Proyecto final integrador del curso **Herramientas básicas para el Análisis de Datos**, dictado por el Centro de e-Learning de la Universidad Tecnológica Nacional (UTN.BA).
 
-El trabajo consiste en un análisis exploratorio del mercado inmobiliario de la Ciudad Autónoma de Buenos Aires (CABA) y el Gran Buenos Aires, utilizando herramientas de procesamiento, análisis y visualización de datos.
+El proyecto consiste en un análisis exploratorio del mercado inmobiliario de la Ciudad Autónoma de Buenos Aires (CABA) y el Gran Buenos Aires, utilizando herramientas de procesamiento, análisis y visualización de datos.
 
-Se integran datasets inmobiliarios históricos y actuales para estudiar la evolución de los precios, las diferencias entre tipos de propiedades y la distribución territorial de los valores.
+Se integran conjuntos de datos inmobiliarios históricos y actuales para estudiar la evolución de los precios, las diferencias entre tipos de propiedades y la distribución territorial de los valores.
+
+El trabajo combina análisis exploratorio en Python, visualizaciones estadísticas y un dashboard desarrollado en Power BI.
 
 ## Objetivos
 
 - Analizar la evolución de los precios inmobiliarios entre 2017 y 2026.
 - Comparar los precios promedio de diferentes tipos de propiedades.
-- Identificar barrios con mayores valores inmobiliarios.
+- Identificar los barrios con mayores valores inmobiliarios.
 - Analizar los precios promedio por metro cuadrado.
 - Aplicar técnicas de limpieza, transformación y exploración de datos.
 - Comunicar resultados mediante visualizaciones en Python y un dashboard en Power BI.
 
 ## Herramientas utilizadas
 
-- **Excel:** revisión y organización de datos.
+- **Microsoft Excel:** revisión, organización y preparación de datos.
 - **Python:** procesamiento y análisis exploratorio.
-- **pandas:** manipulación y transformación de datasets.
-- **matplotlib y seaborn:** visualización de datos.
-- **Google Colab:** desarrollo del notebook.
-- **Power BI:** elaboración del dashboard interactivo.
-- **GitHub:** documentación y publicación del proyecto.
+- **pandas:** manipulación, limpieza y transformación de datasets.
+- **matplotlib y seaborn:** elaboración de visualizaciones estadísticas.
+- **Google Colab:** desarrollo y ejecución del notebook.
+- **Power BI:** creación de indicadores, gráficos y dashboard.
+- **GitHub:** organización, documentación y publicación del proyecto.
 
 ## Fuentes de datos
 
-Se utilizaron conjuntos de datos del mercado inmobiliario correspondientes a:
+Se utilizaron tres conjuntos de datos del mercado inmobiliario:
 
-- REMAX 2026.
-- Properati histórico.
-- Properati 2017.
+- **REMAX 2026:** información inmobiliaria correspondiente a 2026.
+- **Properati histórico:** registros inmobiliarios históricos.
+- **Properati 2017:** información inmobiliaria correspondiente a 2017.
 
-Los datos incluyen información sobre precios, superficies, ubicación, tipos de propiedad y otras características inmobiliarias.
+Los datasets contienen variables relacionadas con:
+
+- Precios de propiedades expresados en USD.
+- Precios promedio por metro cuadrado.
+- Ubicación geográfica y barrios.
+- Tipos de propiedades y operaciones.
+- Superficies totales, cubiertas y descubiertas.
+- Cantidad de ambientes.
+- Antigüedad y estado de conservación.
+- Otras características inmobiliarias.
 
 ## Metodología
 
-### 1. Preparación de datos
+### 1. Preparación y limpieza de datos
+
+Se realizaron tareas de procesamiento para mejorar la consistencia de los datos:
 
 - Integración de diferentes fuentes inmobiliarias.
-- Estandarización de nombres y categorías.
+- Estandarización de nombres de columnas y categorías.
+- Normalización de barrios y ubicaciones geográficas.
 - Tratamiento de valores faltantes.
 - Revisión de registros duplicados.
-- Normalización de formatos y variables.
-- Construcción de una base consolidada.
+- Normalización de formatos numéricos y temporales.
+- Construcción de una base consolidada para el análisis.
 
 ### 2. Análisis exploratorio con Python
 
-- Inspección de la estructura del DataFrame.
-- Estadísticas descriptivas.
-- Evaluación de valores faltantes y duplicados.
-- Análisis de variables numéricas y categóricas.
-- Estudio de relaciones entre variables.
-- Elaboración de visualizaciones.
+Se utilizaron herramientas de Python y pandas para:
+
+- Inspeccionar la estructura del DataFrame.
+- Obtener estadísticas descriptivas.
+- Evaluar valores faltantes y registros duplicados.
+- Analizar variables numéricas y categóricas.
+- Explorar relaciones entre variables.
+- Identificar patrones y diferencias en los precios inmobiliarios.
 
 ### 3. Visualización de resultados
 
@@ -66,40 +82,45 @@ Se desarrollaron gráficos para analizar:
 - Los 10 barrios con mayores precios promedio.
 - Evolución del precio promedio por metro cuadrado.
 
+Las visualizaciones permiten explorar tendencias y diferencias entre segmentos del mercado inmobiliario.
+
 ### 4. Dashboard en Power BI
 
-Se elaboró un tablero para presentar indicadores y gráficos del mercado inmobiliario, facilitando la interpretación y comparación de los resultados.
+Se desarrolló un dashboard para presentar indicadores y visualizaciones del mercado inmobiliario.
+
+El tablero permite comunicar los principales resultados del análisis mediante una presentación visual, facilitando la interpretación y comparación de los datos.
 
 ## Estructura del repositorio
 
-\`\`\`text
-dashboard/
-    Proyecto_Final_Mercado_Inmobiliario.pbix
-    README.md
-
-data/
-    raw/
-        Dataset original del proyecto
-
-notebooks/
-    Proyecto_Final_Real_Estate.ipynb
-    README.md
-
-LICENSE
-README.md
-\`\`\`
+```text
+Curso-de-herramientas-digitales-para-el-an-lisis-de-datos-UTN/
+├── dashboard/
+│   ├── Proyecto_Final_Mercado_Inmobiliario.pbix
+│   └── README.md
+├── data/
+│   └── raw/
+│       ├── Dataset Real_Estate.xlsm
+│       └── README.md
+├── notebooks/
+│   ├── Proyecto_Final_Real_Estate.ipynb
+│   └── README.md
+├── LICENSE
+└── README.md
+```
 
 ## Archivos principales
 
 - [Notebook de análisis exploratorio](notebooks/Proyecto_Final_Real_Estate.ipynb)
 - [Dashboard de Power BI](dashboard/Proyecto_Final_Mercado_Inmobiliario.pbix)
-- [Datos originales](data/raw/)
+- [Dataset original](data/raw/Dataset%20Real_Estate.xlsm)
 
 ## Alcance y limitaciones
 
-El análisis integra fuentes de distintos períodos, por lo que las comparaciones temporales deben interpretarse considerando posibles diferencias de cobertura, composición y representatividad entre los datasets.
+El análisis integra fuentes correspondientes a distintos períodos, por lo que las comparaciones temporales deben interpretarse considerando posibles diferencias de cobertura, composición y representatividad entre los datasets.
 
-Los resultados tienen finalidad exploratoria y académica; no constituyen una tasación inmobiliaria ni una estimación causal de la evolución del mercado.
+Los resultados tienen una finalidad exploratoria y académica. No constituyen una tasación inmobiliaria ni una estimación causal de la evolución de los precios del mercado.
+
+Las conclusiones se encuentran condicionadas por la calidad, disponibilidad y características de los datos utilizados.
 
 ## Formación académica
 
@@ -123,4 +144,4 @@ Ingeniero en Alimentos | Formación en Data Analytics y Data Science
 
 ---
 
-Proyecto desarrollado con fines académicos como trabajo final integrador del curso de UTN.BA.
+Proyecto desarrollado con fines académicos como trabajo final integrador del curso Herramientas básicas para el Análisis de Datos de UTN.BA.
