@@ -114,6 +114,7 @@ Curso-de-herramientas-digitales-para-el-an-lisis-de-datos-UTN/
 - [Dashboard de Power BI](dashboard/Proyecto_Final_Mercado_Inmobiliario.pbix)
 - [Dataset original](data/raw/Dataset%20Real_Estate.xlsm)
 - [Vista previa del dashboard](dashboard/Captura%20del%20dashboard.png)
+- [Dataset procesado y limpio](data/processed/Dataset_Real_Estate_Limpio.xlsx)
   
 ## Alcance y limitaciones
 
