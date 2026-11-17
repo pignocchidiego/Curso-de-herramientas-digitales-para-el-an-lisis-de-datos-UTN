@@ -113,7 +113,7 @@ Curso-de-herramientas-digitales-para-el-an-lisis-de-datos-UTN/
 - [Notebook de análisis exploratorio](notebooks/Proyecto_Final_Real_Estate.ipynb)
 - [Dashboard de Power BI](dashboard/Proyecto_Final_Mercado_Inmobiliario.pbix)
 - [Dataset original](data/raw/Dataset%20Real_Estate.xlsm)
-- [Vista previa del dashboard](dashboard/dashboard_mercado_inmobiliario.png)
+- [Vista previa del dashboard](dashboard/Captura%20del%20dashboard.png)
   
 ## Alcance y limitaciones
 
